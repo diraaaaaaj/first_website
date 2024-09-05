@@ -12,15 +12,6 @@ function toggleDropdown(hobbyId) {
     }
 }
 
-function copyEmailToClipboard() {
-    const email = 'your-email@example.com'; // Replace with your email address
-    navigator.clipboard.writeText(email).then(() => {
-        alert('Email address copied to clipboard!');
-    }, () => {
-        alert('Failed to copy email address.');
-    });
-}
-
 // Function to play background music on user interaction
 function playMusic() {
     var audio = document.getElementById('background-music');
