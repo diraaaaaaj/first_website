@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj's About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Audio Element for Background Music -->
+    <audio id="background-music" src="assests/Arabesque.mp3" preload="auto"></audio>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hey there, I'm Raj, and welcome to my about me website! Here's a glimpse of what I enjoy doing. Feel free to say hi!</p>
+        </section>
+
+        <!-- Hobbies Section with Dropdown -->
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+
+            <!-- Movies Section -->
+            <div class="hobby-item">
+                <button class="hobby-button" onclick="toggleDropdown('movies')">
+                    <img src="assests/popcorn.gif" alt="Popcorn Icon" class="icon-gif"> Movies
+                </button>
+                <div class="hobby-content" id="movies">
+                    <p class="centered-text">I love movies. I enjoy a wide variety of genres, particularly sci-fi and thriller films. But, I also appreciate the light-hearted entertainment of a good comedy or the heartfelt storytelling of a romance movie. There's nothing like getting comfortable with a delicious snack and losing myself in another world on the screen.</p>
+
+                    <!-- Favorite Movies Section -->
+                    <div class="favorite-items">
+                        <div class="item">
+                            <h3>Favourite Sci-Fi Movie: "2001: A Space Odyssey"</h3>
+                            <img src="assests/space_odyssey.gif" alt="Sci-Fi Movie" class="item-image">
+                        </div>
+                        <div class="item">
+                            <h3>Favourite Thriller/Horror Movie: "Get Out"</h3>
+                            <img src="assests/getout.gif" alt="Thriller Movie" class="item-image">
+                        </div>
+                        <div class="item">
+                            <h3>Favourite Drama Movie: "Awakenings"</h3>
+                            <img src="awakenings.webp" alt="Drama Movie" class="item-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Playing Piano Section -->
+            <div class="hobby-item">
+                <button class="hobby-button" onclick="toggleDropdown('piano')">
+                    <img src="assests/piano.gif" alt="Piano Icon" class="icon-gif"> Music
+                </button>
+                <div class="hobby-content" id="piano">
+                    <p class="centered-text">“Music produces a kind of pleasure which human nature cannot do without.” ― Confucius</p>
+
+                    <!-- Favorite Piano Pieces -->
+                    <div class="favorite-items">
+                        <div class="item">
+                            <h3>Favourite Piano Piece: "Clair de lune- Claude Debussy"</h3>
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/c977QdbTImU" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="item">
+                            <h3>Favourite Rap Artist: "Kendrick Lamar"</h3>
+                            <img src="assests/kendrick.webp" alt="Rap Artist" class="item-image">
+                        </div>
+                        <div class="item">
+                            <h3>Favourite Pop Artist: "Michael Jackson"</h3>
+                            <img src="assests/mj.webp" alt="Pop Artist" class="item-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading Section -->
+            <div class="hobby-item">
+                <button class="hobby-button" onclick="toggleDropdown('reading')">
+                    <img src="assests/book.gif" alt="Reading Icon" class="icon-gif"> Reading
+                </button>
+                <div class="hobby-content" id="reading">
+                    <p class="centered-text">Reading allows me to escape into new worlds and explore different perspectives. I enjoy a mix of fiction and non-fiction, with a love for mystery novels and science books.</p>
+
+                    <!-- Favorite Books Section -->
+                    <div class="favorite-items">
+                        <div class="item">
+                            <h3>Favourite Mystery Book: "Sign of Four, Sherlock Holmes series - Arthur Conan Doyle"</h3>
+                            <img src="assests/sofour.jpeg" alt="Mystery Book" class="item-image">
+                        </div>
+                        <div class="item">
+                            <h3>Favourite Non-Fiction Book: "Godel, Escher, Bach - Douglas R Hoffstader"</h3>
+                            <img src="assests/geb.jpg" alt="Non-Fiction Book" class="item-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Games Section -->
+            <div class="hobby-item">
+                <button class="hobby-button" onclick="toggleDropdown('gaming')">
+                    <img src="assests/games.gif" alt="Games Icon" class="icon-gif"> Video Games
+                </button>
+                <div class="hobby-content" id="gaming">
+                    <p class="centered-text">Video games are always great, but they tend to get me more stressed than relaxed.</p>
+
+                    <!-- Favorite Video Games Section -->
+                    <div class="favorite-items">
+                        <div class="item">
+                            <h3>Overwatch</h3>
+                            <img src="assests/overwatch.png" alt="Action Game" class="item-image">
+                        </div>
+                        <div class="item">
+                            <h3>Dota</h3>
+                            <img src="assests/dota.jpg" alt="Adventure Game" class="item-image">
+                        </div>
+                        <div class="item">
+                            <h3>Probably most games</h3>
+                            <img src="assests/games.webp" alt="Various Games" class="item-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section id="links">
+            <h2>Links</h2>
+            <div class="links-row">
+                <div class="link-item">
+                    <a href="https://github.com/diraaaaaaj" target="_blank">
+                        <img src="assests/github.gif" alt="GitHub Icon" class="link-icon"> My GitHub
+                    </a>
+                </div>
+                <div class="link-item">
+                    <a href="https://discord.gg/Jm3TKmMJVT" target="_blank">
+                        <img src="assests/discord.gif" alt="Discord Icon" class="link-icon"> Discord
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <!-- Music Control Bar at the Footer -->
+    <footer>
+        Music: Abaresque - Claude Debussy
+    </footer>
+
+    <!-- JavaScript for Dropdown Functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
